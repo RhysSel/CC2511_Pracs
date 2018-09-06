@@ -1,0 +1,35 @@
+if (value < 70){
+	Red_SetRatio8(0);
+	Green_SetRatio8(0);
+	Blue_SetRatio8(200);
+}
+else if (value >= 70 && value < 100){
+	Red_SetRatio8(0);
+	Green_SetRatio8(200);
+	Blue_SetRatio8(200);
+}
+else if (value >= 100 && value < 130){
+	Red_SetRatio8(0);
+	Green_SetRatio8(200);
+	Blue_SetRatio8(0);
+}
+else if (value >= 130 && value < 160){
+	Red_SetRatio8(200);
+	Green_SetRatio8(200);
+	Blue_SetRatio8(0);
+}
+else if (value >= 160 && value < 190){
+	Red_SetRatio8(200);
+	Green_SetRatio8(0);
+	Blue_SetRatio8(0);
+}
+else if (value >= 190 && value < 220){
+	Red_SetRatio8(200);
+	Green_SetRatio8(0);
+	Blue_SetRatio8(200);
+}
+else if (value >= 220){
+	Red_SetRatio8(200);
+	Green_SetRatio8(200);
+	Blue_SetRatio8(200);
+}

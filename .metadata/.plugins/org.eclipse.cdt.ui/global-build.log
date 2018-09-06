@@ -1,0 +1,100 @@
+23:47:39 **** Build of configuration Debug for project Prac_`1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup_MK20D5.S
+Invoking: Cross ARM GNU Assembler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MK20D5.d" -MT"Project_Settings/Startup_Code/startup_MK20D5.o" -c -o "Project_Settings/Startup_Code/startup_MK20D5.o" "../Project_Settings/Startup_Code/startup_MK20D5.S"
+Finished building: ../Project_Settings/Startup_Code/startup_MK20D5.S
+ 
+Building file: ../Project_Settings/Startup_Code/system_MK20D5.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/system_MK20D5.d" -MT"Project_Settings/Startup_Code/system_MK20D5.o" -c -o "Project_Settings/Startup_Code/system_MK20D5.o" "../Project_Settings/Startup_Code/system_MK20D5.c"
+Finished building: ../Project_Settings/Startup_Code/system_MK20D5.c
+ 
+Building target: Prac_`1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Yaboi/Documents/Uni shit/CC2511/Pracs/Prac_`1/Project_Settings/Linker_Files" -Wl,-Map,"Prac_`1.map" -specs=nano.specs -specs=nosys.specs -o "Prac_`1.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+c:/freescale/kds_v3/eclipse/../bin/sh: syntax error: EOF in backquote substitution
+makefile:52: recipe for target 'Prac_`1.elf' failed
+make: *** [Prac_`1.elf] Error 2
+23:48:33 **** Incremental Build of configuration Debug for project Prac_`1 ****
+make all 
+Building target: Prac_`1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Yaboi/Documents/Uni shit/CC2511/Pracs/Prac_`1/Project_Settings/Linker_Files" -Wl,-Map,"Prac_`1.map" -specs=nano.specs -specs=nosys.specs -o "Prac_`1.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+c:/freescale/kds_v3/eclipse/../bin/sh: syntax error: EOF in backquote substitution
+makefile:52: recipe for target 'Prac_`1.elf' failed
+make: *** [Prac_`1.elf] Error 2
+23:55:17 **** Incremental Build of configuration Debug for project Prac_`1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+In file included from ../Sources/main.c:32:0:
+../Sources/main.c: In function 'main':
+../Includes/MK20D5_simple.h:3424:50: error: called object is not a function or function pointer
+ #define GPIO_PDOR_REG(base)                      ((base)->PDOR)
+                                                  ^
+../Includes/MK20D5_simple.h:3522:50: note: in expansion of macro 'GPIO_PDOR_REG'
+ #define GPIOD_PDOR                               GPIO_PDOR_REG(PTD_BASE_PTR)
+                                                  ^
+../Sources/main.c:57:7: note: in expansion of macro 'GPIOD_PDOR'
+       GPIOD_PDOR = 0B10000;
+       ^
+Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+23:56:41 **** Incremental Build of configuration Debug for project Prac_`1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Prac_`1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Yaboi/Documents/Uni shit/CC2511/Pracs/Prac_`1/Project_Settings/Linker_Files" -Wl,-Map,"Prac_`1.map" -specs=nano.specs -specs=nosys.specs -o "Prac_`1.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+c:/freescale/kds_v3/eclipse/../bin/sh: syntax error: EOF in backquote substitution
+makefile:52: recipe for target 'Prac_`1.elf' failed
+make: *** [Prac_`1.elf] Error 2
+23:57:49 **** Incremental Build of configuration Debug for project Prac_`1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Prac_`1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Yaboi/Documents/Uni shit/CC2511/Pracs/Prac_`1/Project_Settings/Linker_Files" -Wl,-Map,"Prac_`1.map" -specs=nano.specs -specs=nosys.specs -o "Prac_`1.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+c:/freescale/kds_v3/eclipse/../bin/sh: syntax error: EOF in backquote substitution
+makefile:52: recipe for target 'Prac_`1.elf' failed
+make: *** [Prac_`1.elf] Error 2
+00:26:18 **** Incremental Build of configuration Debug for project Prac_`1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c: In function 'main':
+../Sources/main.c:52:47: error: 'i' undeclared (first use in this function)
+      for (int counter = 0; counter < 1000000; i++)
+                                               ^
+../Sources/main.c:52:47: note: each undeclared identifier is reported only once for each function it appears in
+Sources/subdir.mk:18: recipe for target 'Sources/main.o' failed
+make: *** [Sources/main.o] Error 1
+06:19:47 **** Build of configuration Debug for project Prac_`1 ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building target: Prac_`1.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX128xxx5_flash.ld" -Xlinker --gc-sections -L"C:/Users/Yaboi/Documents/Uni shit/CC2511/Pracs/Prac_`1/Project_Settings/Linker_Files" -Wl,-Map,"Prac_`1.map" -specs=nano.specs -specs=nosys.specs -o "Prac_`1.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D5.o ./Project_Settings/Startup_Code/system_MK20D5.o   
+c:/freescale/kds_v3/eclipse/../bin/sh: syntax error: EOF in backquote substitution
+makefile:52: recipe for target 'Prac_`1.elf' failed
+make: *** [Prac_`1.elf] Error 2
